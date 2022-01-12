@@ -1,0 +1,14 @@
+{
+  "builders": [
+    {
+      "type": "googlecompute",
+      "name": "hello-world",
+      "project_id": "infra-actor-333516",
+      "source_image": "ubuntu-1804-bionic-v20211021",
+      "ssh_username": "ubuntu",
+      "zone": "europe-central2-a",
+      "startup_script_file": "../scripts/setup.sh",
+      "machine_type": "e2-small"
+    }
+  ]
+}

@@ -81,9 +81,7 @@ resource "google_compute_instance_group" "terraform-instance-group" {
   }
 }
 
-resource "google_compute_address" "nat-auto-ip" {
-  name = "nat-auto-ip-1779784-8-1641304357129320"
-}
+
 
 resource "google_compute_router" "terraform-nat-router" {
   name    = "terraform-nat-router"
